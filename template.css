@@ -1,63 +1,81 @@
 @charset "UTF-8";
 body {
-	max-width: 1200px;
-	min-width: 816px;
-	background: #000000; /* Old browsers */
-	background: -moz-linear-gradient(left,  #7ad337 0%, #ffffff 10%, #ffffff 90%, #7ad337 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#7ad337), color-stop(10%,#ffffff), color-stop(90%,#ffffff), color-stop(100%,#7ad337)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left,  #7ad337 0%,#ffffff 10%,#ffffff 90%,#7ad337 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left,  #7ad337 0%,#ffffff 10%,#ffffff 90%,#7ad337 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left,  #7ad337 0%,#ffffff 10%,#ffffff 90%,#7ad337 100%); /* IE10+ */
-	background: linear-gradient(to right,  #7ad337 0%,#ffffff 10%,#ffffff 90%,#7ad337 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ad337', endColorstr='#7ad337',GradientType=1 ); /* IE6-9 */
+	max-width: 1280px;
+	min-width: 990px;
+	margin: 0;
+	padding: 0;
+	background: #FFF;
+	
+}
+
+.gradleft {
+	display: block;
+	float: left;
+	width: 10%;
+	background-image: url(Photos/gradleft.png);
+	background-position: left top;
+	background-repeat: repeat-y;
+	background-size: 100% auto;
+	height: 800px;
+}
+
+.gradright {
+	display: block;
+	float: right;
+	width: 10%;
+	background-image: url(Photos/gradright.png);
+	background-position: right top;
+	background-repeat: repeat-y;
+	background-size: 100% auto;
+	height: 800px;
 }
 
 ul, ol, dl {
 	padding: 0;
 	margin: 0;
 }
-li {
-	list-style-type: none;
-}
-a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
-	border: none;
-}
 
-/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
 a:link {
 	color:#414958;
-	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+	text-decoration: none;
 }
 a:visited {
-	color: #4E5869;
+	color: #414958;
 	text-decoration: underline;
 }
-a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+a:hover, a:active, a:focus {
 	text-decoration: none;
 }
 
-/* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
-.container {
+.content {
 	width: 80%;
-	max-width: 1000px;/* a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
-	min-width: 680px;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
-	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+	max-width: 1000px;
+	min-width: 798px;
+	margin: 0 auto;
+	background: url(Photos/background.png);
+	background-repeat: no-repeat;
+	background-size: 65%;
 }
 
 #branding {
 	float: right;
-	padding-top: 11%;
+	padding-top: 10.75%;
 	padding-right: 13px; 
 }
 
-.content {
-	background: url(Photos/background.png);
-	background-repeat:no-repeat;
-	background-size: 65%;
+#logo {
+	width: 42%;
+	float: left;
+	padding-left: 15%;
+}
+#motto {
+	width: 43%;
+	padding-top: 1.7%;
+	float: right;
 }
 
 #nav {
-	padding: 15% 0 0 13.1%;
+	padding: 14.5% 0 0 13.1%;
 	text-align: justify;
     height: 40px;
 }
@@ -91,7 +109,9 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	color: #FFF;
 	background: #9CD572;
 }
-#subnav {
+
+
+/*#subnav {
 	font-family: Verdana, Geneva, sans-serif;
 	width: 140px;
 	display: block;
@@ -135,7 +155,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	position: relative;
 	padding-left: 5%;
 	width: 90%;
-}
+}*/
 
 .maincontent{
 	margin-left: 180px;
