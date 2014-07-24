@@ -1,0 +1,346 @@
+@charset "UTF-8";
+body {
+	font: 100%/1.4;
+	background: #FFF;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-family: "Century Gothic",Muli,"Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl {
+	padding: 0;
+	margin: 0;
+}
+
+a img {
+	border: none;
+}
+
+p {
+	font-size: 12px;
+	font-weight: normal;
+	color: #000;
+	text-decoration: none;
+	padding-left: 5px;
+	margin-top: 0;
+}
+
+/* ~~ this fixed width container surrounds all other divs~~ */
+.container {
+	width: 1150px;
+	background: #FFF;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.sidebar1 {
+	float: left;
+	width: 185px;
+	background: #FFF;
+}
+.content {
+
+	padding: 10px 0;
+	width: 780px;
+	float: left;
+}
+.sidebar2 {
+	float: left;
+	width: 185px;
+	background: #FFF;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px;
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+	list-style: none;
+	border-top: 1px solid #666;
+	margin-bottom: 15px; 
+}
+ul.nav li {
+	border-bottom: 1px solid #666;
+}
+/* grouping these selectors makes sure that your links retain their button look even after being visited */
+ul.nav a, ul.nav a:visited { 
+	padding: 5px 5px 5px 15px;
+	display: block;
+	width: 160px;
+	text-decoration: none;
+	background: #C6D580;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
+	background: #ADB96E;
+	color: #FFF;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {
+	float: right;
+	margin-left: 8px;
+}
+.fltlft {
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat {
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+
+
+/* Floral backgrounds on the sides of the site */
+#leftBackground {
+	background-image:url(Photos/sideBackground.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	
+	width: 185px;
+	height: 990px;
+}
+#rightBackground {
+	background-image:url(Photos/sideBackground.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	
+	width: 185px;
+	height: 990px;
+	
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+	filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+
+
+/* Contains the motto, logo and facebook branding link at the top of the page */
+.header {
+	margin: 0 auto;
+	padding: 15px;
+	width: 100%;
+}
+
+/* The KenKou with logo image at the top of the page */
+#logo {	
+	float: left;
+	width: 465px;
+	height: 70px;
+}
+/* Image that contains the eat well motto at the top of the page */
+#motto {
+	width: 230px;
+	float: left;
+	padding: 40px 0 20px 0;
+}
+
+/* Facebook icon link on the top of the page */
+#branding {
+	float: right;
+	padding: 30px 35px 0 0;
+}
+#branding img {
+	width: 25px;
+	height: auto;
+}
+
+/* Main navigation at top of page */
+#nav {
+	font-size: 20px;
+	padding: 15px;
+	text-align: justify;
+    height: 47px;
+	z-index: 10;
+}
+#nav:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+#nav li {
+	border: 1px solid #000;
+	box-shadow: 1px 1px 1px 1px #C0C0C0;
+	-moz-border-radius-topleft: 13px;
+    -webkit-border-top-left-radius: 13px;
+    -moz-border-radius-topright: 13px;
+    -webkit-border-top-right-radius: 13px;
+	border-top-left-radius: 13px;
+	border-top-right-radius: 13px;
+	
+	background: #FFF;
+	color: #191919;
+	display: inline-block;
+	height: 47px;
+	line-height: 47px;
+	text-align: center;
+	white-space: nowrap;
+	padding: 0 30px 0 30px;
+}
+#nav a {
+	text-decoration: none;	
+}
+#nav a li:hover {
+	color: #4A5A67;
+	background: #c3e5aa;
+}
+/* Highlighting for the current navigation page */
+#curnav li{
+	color: #FFF;
+	background: #9CD572;
+}
+
+/* All the remaining content. Contains all the important info*/
+.main {
+	padding: 60px 0 0 0;
+	width: 750px;
+	margin: 0 auto;
+	z-index: 20;
+}
+
+
+
+/* All the homepage css.*/
+/* This sets the size of the content and right image sizes */
+.homecontent {
+	padding: 60px 0 0 0;
+	margin: 0 auto;
+	width: 750px;
+}
+.homecontent img{
+	width: 100%;
+}
+/* Used for 'Premium Fresh Asian Food' */
+#fontSegoeGold {
+	font-size: 20px;
+	font-family: "Segoe Script", "Merienda One", Helvetica, sans-serif;
+	/*color: #958B5A;*/
+	color: rgba(149,139,90,0.8);
+	
+}
+/* Background on the home page */
+.homebackground {
+	width: 727px;
+	height: 424px;
+	
+	margin: 0 auto;
+	background-image:url(Home/Photos/background.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+/* Contains the links to the sushi page and the salad page in menu */
+.menulinks {
+	padding-top: 27.75%;
+	margin: 0 auto;
+	width: 80%;
+	opacity: 1.0;
+	text-align: center;
+}
+.menulinks img {
+	padding-top: 4%;
+}
+.menulinks a {
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+}
+/* Sets the content of the sushi link to the left of the page */
+.sushilink {
+	width: 40%;
+	float: left;
+	padding-left:2.5%;
+}
+/* Sets the content of the salad link to the right of the page */
+.saladlink {
+	width: 40%;
+	float: right;
+	padding-right:2.5%;
+}
+
+.fontGreenItalic {
+	font-size: 12px;
+	color: #9CD572;
+	font-style: italic;
+}
+
+/* CSS for the menu pages. Sets photos to the left and the description the right*/
+.menuItem {
+	float: right;
+	width: 100%;
+}
+.menuSidePhotos {
+	width: 30%;
+	padding-left: 10%;
+	float: left;
+}
+.menuSidePhotos img {
+	padding-bottom: 20%;	
+}
+.sushiItemBackground {
+	width: 50%;
+	margin-right: 5%;
+	padding-top: 5px;
+	float: right;
+	background: #F0F5F9; /* for non-css3 browsers */
+	background-image: -ms-linear-gradient(left, #C4D7E8 0%, #FFFFFF 100%); /* IE10 Consumer Preview */ 
+	background-image: -moz-linear-gradient(left, #C4D7E8 0%, #FFFFFF 100%); /* Mozilla Firefox */
+	background-image: -o-linear-gradient(left, #C4D7E8 0%, #FFFFFF 100%); /* Opera */
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #C4D7E8), color-stop(1, #FFFFFF)); /* Webkit (Safari/Chrome 10) */
+	background-image: -webkit-linear-gradient(left, #C4D7E8 0%, #FFFFFF 100%); /* Webkit (Chrome 11+) */ 
+	background-image: linear-gradient(to right, #C4D7E8 0%, #FFFFFF 100%); /* W3C Markup, IE10 Release Preview */
+}
+.saladItemBackground {
+	width: 50%;
+	margin-right: 5%;
+	padding-top: 5px;
+	float: right;
+	background: #E7E3D4; /* for non-css3 browsers */
+	background-image: -ms-linear-gradient(left, #CFC8AB 0%, #FFFFFF 100%); /* IE10 Consumer Preview */ 
+	background-image: -moz-linear-gradient(left, #CFC8AB 0%, #FFFFFF 100%); /* Mozilla Firefox */
+	background-image: -o-linear-gradient(left, #CFC8AB 0%, #FFFFFF 100%); /* Opera */
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #CFC8AB), color-stop(1, #FFFFFF)); /* Webkit (Safari/Chrome 10) */
+	background-image: -webkit-linear-gradient(left, #CFC8AB 0%, #FFFFFF 100%); /* Webkit (Chrome 11+) */ 
+	background-image: linear-gradient(to right, #CFC8AB 0%, #FFFFFF 100%); /* W3C Markup, IE10 Release Preview */
+}
+#menuName {
+	width:54%;
+	float: left;
+	padding-right: 2.5%;
+} #menuName p {
+	font-family: 'Nunito', sans-serif;
+	font-size: 13px;
+}
+#menuPrice {
+	width:18%;
+	float: left;
+} #menuPrice p {
+	font-family: 'Nunito', sans-serif;
+	font-size: 13px;
+}
+#menuCals {
+	width: 23%;
+	float: right;
+	padding-left: 2.5%;
+} #menuCals p {
+	font-weight: bold;
+	color: #9CD572;
+}
+#menuDescription {
+	float:left;
+	width: 75%;
+}
+/*
+#likeButton {
+	width: 24%;
+	float: right;
+}*/
