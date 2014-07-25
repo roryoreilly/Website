@@ -45,7 +45,7 @@ p {
 	background: #FFF;
 }
 .content {
-	padding: 10px 0;
+	padding: 10px 0 20px 0;
 	max-width: 780px;
 	min-width: 639px;
 	width:67.5%;
@@ -65,19 +65,19 @@ p {
 }
 
 /* ~~ miscellaneous float/clear classes ~~ */
-.fltrt {
-	float: right;
-	margin-left: 8px;
-}
-.fltlft {
-	float: left;
-	margin-right: 8px;
-}
 .clearfloat {
 	clear:both;
 	height:0;
 	font-size: 1px;
 	line-height: 0px;
+}
+#footer {
+	position:absolute;
+	bottom: -3%;
+	left:42%;
+	width:100%;
+	font-size: 9px;
+	
 }
 
 
@@ -89,7 +89,7 @@ p {
 	background-repeat: no-repeat;
 	
 	width: 185px;
-	height: 990px;
+	padding: 210% 0;
 }
 #rightBackground {
 	background-image:url(Photos/sideBackground.png);
@@ -97,7 +97,7 @@ p {
 	background-repeat: no-repeat;
 	
 	width: 185px;
-	height: 990px;
+	padding: 210% 0;
 	
 	-moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);

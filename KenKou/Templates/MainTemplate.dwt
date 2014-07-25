@@ -14,8 +14,10 @@
 <body>
 
 <div class="container">
+  <!-- TemplateBeginEditable name="sidebarStyle" -->
   <div class="sidebar1">
     <div id="leftBackground" ></div>
+    <!-- TemplateEndEditable -->
     <!-- end .sidebar1 --></div>
   <div class="content">
   	<div class="header">
@@ -38,9 +40,17 @@
     
     <!-- end .main --></div>
     <!-- TemplateEndEditable -->
+  	<div class="clearfloat"></div>
+    <!-- TemplateBeginEditable name="footerStyle" -->
+    <div id="footer">
+    	KenKou Ltd 2014, Regestered in Ireland No. xxxxxxxx
+    </div>
+    <!-- TemplateEndEditable -->
   <!-- end .content --></div>
+  <!-- TemplateBeginEditable name="sidebarStyle2" -->
   <div class="sidebar2">
     <div id="rightBackground" ></div>
+    <!-- TemplateEndEditable -->
     <!-- end .sidebar2 --></div>
   <!-- end .container --></div>
 </body>

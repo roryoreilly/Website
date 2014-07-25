@@ -5,11 +5,33 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>KenKou</title>
 <link href="mobile.css" rel="stylesheet" type="text/css" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.transit.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="main.js"></script>
+
 <link href='http://fonts.googleapis.com/css?family=Muli|Merienda+One' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-
+<div class="menu-button">
+    <div class="menu-icon"></div>
+    <div class="menu-icon"></div>
+    <div class="menu-icon"></div>
+</div>
+<div class="menu">
+    <a href="#home"></a>
+    <ul class="menu-items">
+        <li class="menu-item menu-link"><a href="#home">About</a></li>
+        <li class="menu-separator menu-item">•</li>
+        <li class="menu-item mobile-hide menu-link"><a href="#menu">Menu</a></li>
+        <!-- <li class="menu-item menu-link"><a href="menu/sushi">Sushi</a></li> -->
+        <!-- <li class="menu-item menu-link"><a href="menu/salad">Salad</a></li> -->
+        <li class="menu-separator menu-item">•</li>
+        <li class="menu-item menu-link"><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="../Home/Homepage.html" class="desktop">View Desktop site</a>
+</div>
 <div class="container">
   	<div class="topSection"><div class="absolute"></div>
   	<div class="header">
@@ -28,7 +50,7 @@
     <div class="firstTransition">
   		<img src="Photos/firstTransition.png" alt="background" style="width: 100%; padding: 0 0 0 0;"/>
     </div>
-    <div class="menuSection">
+    <div class="menuSection" id="menu">
    		<div id="menuHeader">
         	Menu
         </div>
@@ -155,7 +177,7 @@
     <div class="firstTransition">
   		<img src="Photos/secondTransition.png" alt="background" style="width: 100%; padding: 0 0 0 0;"/>
     </div>
-    <div class="contactSection">
+    <div class="contactSection" id="contact">
    		<div id="contactHeader">
         	Contact Us
         </div>
